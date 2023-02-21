@@ -14,30 +14,36 @@
 
 <body>
     <div class="container">
-        <header>
-            <section>
-                <img src="assets/icons/book.svg" alt="Open book" width="24">
-                <p>Readible</p>
-            </section>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Contact</a></s></li>
-                    <li><button>Search</button></li>
-                </ul>
-            </nav>
+        <header class="header-main">
+            <div class="wrapper">
+                <section class="logo">
+                    <img class="icon-sm" class="icon" src="assets/icons/book.png" alt="Open book">
+                    <p>Readible</p>
+                </section>
+                <nav>
+                    <ul class="nav-horizontal">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></s></li>
+                        <li><button><img class="icon-sm" src="assets/icons/search.png" alt="Search icon"></button></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <article>
-                <header>
-                    <h1>Roatan guide: Why this Honduran island needs to be on your go-list</h1>
-                    <a href="#" class="category">Places</a>
-                    <img src="assets/images/profile.jpg" alt="Profile image" width="24">
-                    <a href="#" rel="author">Casey Dajuma</a>
-                    <time datetime="2023-02-02">02/02/2023</time>
+            <article class="article-one">
+                <header class="article-header">
+                    <div class="wrapper">
+                        <h1>Roatan guide: Why this Honduran island needs to be on your go-list</h1>
+                        <a href="#" class="category">Places</a>
+                        <div class="article-info">
+                            <img src="assets/images/profile.jpg" alt="Profile image" width="24">
+                            <a href="#" rel="author">Casey Dajuma</a>
+                            <time datetime="2023-02-02">02/02/2023</time>
+                        </div>
+                    </div>
                 </header>
-                <div>
+                <div class="article-body  wrapper">
                     <p> With its golden beaches, turquoise water teeming with marine life, and varied landscapes—from
                         rain
                         forests to mangroves
@@ -143,20 +149,24 @@
                 </div>
             </article>
         </main>
-        <footer>
-            <p>
-                &copy; copyright 2023 Readible
-            </p>
-            <nav class="nav-legal">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-            </nav>
-            <section>
-                <a href="" aria-label="To twitter"> <img src="assets/icons/twitter.png" alt="Twitter" width="24"></a>
-                <a href="" aria-label="To facebook"><img src="assets/icons/facebook.png" alt="Facebook" width="24"></a>
-                <a href="" aria-label="To instagram"><img src="assets/icons/instagram.png" alt="Instagram"
-                        width="24"></a>
-            </section>
+        <footer class="footer-main">
+            <div class="wrapper">
+                <p>
+                    &copy; copyright 2023 Readible
+                </p>
+                <nav class="nav-horizontal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </nav>
+                <section>
+                    <a class="icon" href="" aria-label="To twitter"> <img class="icon" src="assets/icons/twitter.png"
+                            alt="Twitter"></a>
+                    <a class="icon" href="" aria-label="To facebook"><img class="icon" src="assets/icons/facebook.png"
+                            alt="Facebook"></a>
+                    <a class="icon" href="" aria-label="To instagram"><img class="icon" src="assets/icons/instagram.png"
+                            alt="Instagram"></a>
+                </section>
+            </div>
         </footer>
     </div><!-- container -->
 </body>

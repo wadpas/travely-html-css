@@ -14,117 +14,143 @@
 
 <body>
     <div class="container">
-        <header>
-            <section>
-                <img src="assets/icons/book.svg" alt="Open book" width="24">
-                <h1>Readible</h1>
-            </section>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Contact</a></s></li>
-                    <li><button>Search</button></li>
-                </ul>
-            </nav>
+        <header class="header-main">
+            <div class="wrapper">
+                <section class="logo">
+                    <img class="icon-sm" src="assets/icons/book.png" alt="Open book">
+                    <p>Readible</p>
+                </section>
+                <nav>
+                    <ul class="nav-horizontal">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></s></li>
+                        <li><button><img class="icon-sm" src="assets/icons/search.png" alt="Search icon"></button></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <main>
-            <article>
-                <img src="assets/images/roatan-main.jpg" alt="Roatan Main">
-                <header>
-                    <h2>Roatan guide: Why this Honduran island needs to be on your go-list</h2>
-                    <div>
-                        <a href="#" class="category">Places</a>
-                        <time datetime="2023-02-02">02/02/2023</time>
-                    </div>
-                </header>
-                <p>Where to eat, stay, and play on this underrated island.</p>
-                <a href="#" aria-label="Read more about Roatan island">Read more &rightarrow;</a>
-            </article>
-            <div>
-                <section>
+        <main class="wrapper">
+            <article class="card card-big">
+                <a href="article.html">
+                    <img src="assets/images/roatan-main.jpg" alt="Roatan Main">
+                </a>
+                <div class="card-info">
                     <header>
+                        <h2>Roatan guide: Why this Honduran island needs to be on your go-list</h2>
+                        <div>
+                            <a href="#" class="category">Places</a>
+                            <time datetime="2023-02-02">02/02/2023</time>
+                        </div>
+                    </header>
+                    <p>Where to eat, stay, and play on this underrated island.</p>
+                    <a href="article.html" aria-label="Read more about Roatan island">Read more &rightarrow;</a>
+                </div>
+            </article>
+            <div class="landing-content">
+                <section class="card-list">
+                    <header class="card-list-header">
                         <h2>Last articles</h2>
                     </header>
-                    <article>
-                        <img src="assets/images/foodbox.jpg" alt="Foodbox">
-                        <header>
-                            <h3>7 tips for traveling with food allergies</h3>
-                            <div>
-                                <a href="#" class="category">Food and Drink</a>
-                                <time datetime="2023-01-12">12/01/2023</time>
-                            </div>
-                        </header>
-                        <p>Don’t let your allergies get in the way of a good vacation.</p>
-                        <a href="#" aria-label="7 tips for traveling">Read more &rightarrow;</a>
+                    <article class="card">
+                        <figure>
+                            <img src="assets/images/foodbox.jpg" alt="Foodbox">
+                        </figure>
+                        <div class="card-info">
+                            <header>
+                                <h2>7 tips for traveling with food allergies</h2>
+                                <div>
+                                    <a href="#" class="category">Food and Drink</a>
+                                    <time datetime="2023-01-12">12/01/2023</time>
+                                </div>
+                            </header>
+                            <p>Don’t let your allergies get in the way of a good vacation.</p>
+                            <a href="#" aria-label="7 tips for traveling">Read more &rightarrow;</a>
+                        </div>
                     </article>
-                    <article>
-                        <img src="assets/images/resorts.jpg" alt="Caribbean">
-                        <header>
-                            <h3>Best all-inclusive resorts for couples in the Caribbean</h3>
-                            <div>
-                                <a href="#" class="category">Places</a>
-                                <time datetime="2023-02-11">11/02/2023</time>
-                            </div>
-                        </header>
-                        <p>From butler service to private pool access, these all-inclusive resorts up the ante.</p>
-                        <a href="#" aria-label="Resorts for couples">Read more &rightarrow;</a>
+                    <article class="card">
+                        <figure>
+                            <img src="assets/images/resorts.jpg" alt="Caribbean">
+                        </figure>
+                        <div class="card-info">
+                            <header>
+                                <h2>Best all-inclusive resorts in the Caribbean</h2>
+                                <div>
+                                    <a href="#" class="category">Places</a>
+                                    <time datetime="2023-02-11">11/02/2023</time>
+                                </div>
+                            </header>
+                            <p>From butler service to private pool access, these all-inclusive resorts up the ante.</p>
+                            <a href="#" aria-label="Resorts for couples">Read more &rightarrow;</a>
+                        </div>
                     </article>
-                    <article>
-                        <img src="assets/images/orlean.jpg" alt="Orlean">
-                        <header>
-                            <h3>Orlean does travelers a lot of favors</h3>
-                            <div>
-                                <a href="#" class="category">Exploring</a>
-                                <time datetime="2023-01-30">30/01/2023</time>
-                            </div>
-                        </header>
-                        <p>The perfect 3 days in New Orleans</p>
-                        <a href="#" aria-label="Orleans 3 days ">Read more &rightarrow;</a>
+                    <article class="card">
+                        <figure>
+                            <img src="assets/images/orlean.jpg" alt="Orlean">
+                        </figure>
+                        <div class="card-info">
+                            <header>
+                                <h2>Orlean does travelers a lot of favors</h2>
+                                <div>
+                                    <a href="#" class="category">Exploring</a>
+                                    <time datetime="2023-01-30">30/01/2023</time>
+                                </div>
+                            </header>
+                            <p>The perfect 3 days in New Orleans</p>
+                            <a href="#" aria-label="Orleans 3 days ">Read more &rightarrow;</a>
+                        </div>
                     </article>
-                    <article>
-                        <img src="assets/images/romantic.jpg" alt="Romantic trips">
-                        <header>
-                            <h3>9 romantic trips for couples in the US</h3>
-                            <div>
-                                <a href="#" class="category">Exploring</a>
-                                <time datetime="2023-02-21">02/21/2023</time>
-                            </div>
-                        </header>
-                        <p>From Chicago to Savannah, these spots are packed with things to do for two.</p>
-                        <a href="#" aria-label="The best trips for couples">Read more &rightarrow;</a>
+                    <article class="card">
+                        <figure>
+                            <img src="assets/images/romantic.jpg" alt="Romantic trips">
+                        </figure>
+                        <div class="card-info">
+                            <header>
+                                <h2>9 romantic trips for couples in the US</h2>
+                                <div>
+                                    <a href="#" class="category">Exploring</a>
+                                    <time datetime="2023-02-21">02/21/2023</time>
+                                </div>
+                            </header>
+                            <p>From Chicago to Savannah, these spots are packed with things to do for two.</p>
+                            <a href="#" aria-label="The best trips for couples">Read more &rightarrow;</a>
+                        </div>
                     </article>
-                    <button>Load more</button>
+                    <button class="button">Load more</button>
                 </section>
                 <aside>
-                    <article>
+                    <article class="newsletter">
                         <header>
-                            <h3>Our newsletter</h3>
+                            <h2>Our newsletter</h2>
                         </header>
                         <p>Subscribe</p>
                         <form>
                             <input type="email" name="name" aria-label="Email address" />
-                            <button type="submit">Subscribe</button>
+                            <button class="button" type="submit">Subscribe</button>
                         </form>
                         <p>No spam just awesome things</p>
                     </article>
                 </aside>
             </div>
         </main>
-        <footer>
-            <p>
-                &copy; copyright 2023 Readible
-            </p>
-            <nav class="nav-legal">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-            </nav>
-            <section>
-                <a href="" aria-label="To twitter"> <img src="assets/icons/twitter.png" alt="Twitter" width="24"></a>
-                <a href="" aria-label="To facebook"><img src="assets/icons/facebook.png" alt="Facebook" width="24"></a>
-                <a href="" aria-label="To instagram"><img src="assets/icons/instagram.png" alt="Instagram"
-                        width="24"></a>
-            </section>
+        <footer class="footer-main">
+            <div class="wrapper">
+                <p>
+                    &copy; copyright 2023 Readible
+                </p>
+                <nav class="nav-horizontal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </nav>
+                <section>
+                    <a href="" aria-label="To twitter"> <img class="icon" src="assets/icons/twitter.png"
+                            alt="Twitter"></a>
+                    <a href="" aria-label="To facebook"><img class="icon" src="assets/icons/facebook.png"
+                            alt="Facebook"></a>
+                    <a href="" aria-label="To instagram"><img class="icon" src="assets/icons/instagram.png"
+                            alt="Instagram"></a>
+                </section>
+            </div>
         </footer>
     </div><!-- container -->
 </body>
